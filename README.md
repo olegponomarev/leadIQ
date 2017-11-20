@@ -1,6 +1,6 @@
 #LeadIQ Coding Challenge
 
-##1 Challenge
+## 1 Challenge  
 We would like to have a RESTful web service that stores some transactions
 (in memory is fine) and returns information about those transactions. The
 transactions to be stored have a type and an amount. The service should support
@@ -18,7 +18,7 @@ In general we are looking for a good implementation, code quality and how the
 implementation is tested. Some discussion about asymptotic behaviour would
 also be appreciated.
 
-##2 Api Spec
+## 2 Api Spec  
 **PUT** /transactionservice/transaction/$transaction_id  
 Body:
 { "amount":double,"type":string,"parent_id":long }  
@@ -41,7 +41,7 @@ Returns: { "sum": double }
 A sum of all transactions that are transitively linked by their parent_id to
 $transaction_id.
 
-##3 Examples
+## 3 Examples  
 **PUT** /transactionservice/transaction/10 { "amount": 5000, "type":"cars" }  
 => { "status": "ok" }
 
@@ -58,5 +58,5 @@ $transaction_id.
 **GET** /transactionservice/sum/11  
 => {"sum":10000}
 
-##4 Run
+## 4 Run  
 `gradlew bootRun`
