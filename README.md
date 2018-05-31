@@ -1,4 +1,4 @@
-# LeadIQ Coding Challenge
+# Coding Challenge
 
 ## 1 Challenge  
 We would like to have a RESTful web service that stores some transactions
